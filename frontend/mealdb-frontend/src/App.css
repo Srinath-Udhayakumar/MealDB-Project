@@ -1,0 +1,78 @@
+#root{
+  width: 100%;
+}
+
+.app {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2px;
+  font-family: sans-serif;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 10;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.meals-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  list-style:  none;
+  padding: 0;
+}
+
+.meal-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background: #fff;
+  color: black;
+}
+
+.meal-thumb {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.meal-card h3 {
+  margin: 10px 0 5px;
+}
+
+.meal-card.least {
+  border: 2px solid #28a745;
+  background: #8cf1ab;
+}
+
+.least-meal {
+  border: 2px solid #28a745;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background: #a6b619;
+  color: white;
+}
+
+.meal-details{
+  maxWidth: 400;
+  width: "100%";
+  borderRadius: 8;
+}
+
+.error {
+  color: red;
+}
