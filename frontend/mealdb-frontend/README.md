@@ -1,1 +1,1 @@
-MealDB App
+MealDB App frontend
