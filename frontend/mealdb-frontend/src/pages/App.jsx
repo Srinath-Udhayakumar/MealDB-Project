@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'  // component store and update
 import { Routes, Route, Link } from 'react-router-dom';
 import "../css/index.css";
-import Home from './pages/Home';
-import MealDetails from './pages/MealDetails';
+import Home from './Home';
+import MealDetails from './MealDetails';
 
 const API_BASE = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
