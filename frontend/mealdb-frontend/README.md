@@ -1,1 +1,1 @@
-MealDB App frontend
+MealDB Explorer
