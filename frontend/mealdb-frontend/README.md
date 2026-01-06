@@ -1,1 +1,1 @@
-MealDB Explorer online Application
+MealDB Explorer App
