@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'  // component store and update
 import { Routes, Route, Link } from 'react-router-dom';
-import "./index.css";
+
 import Home from './pages/Home';
 import MealDetails from './pages/MealDetails';
 
