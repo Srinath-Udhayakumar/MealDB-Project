@@ -206,4 +206,4 @@ For reliability, **GitHub Actions is used as the primary CI tool**.
 ## 🙌 Conclusion
 
 This project is not just a frontend application —  
-it is a **complete CI/CD learning journey** demonstrating how real-world DevOps pipelines work, the limitations of local environments, and the correct usage of modern automation tools.
+it is a **complete CI/CD learning journey** demonstrating how real-world DevOps pipelines work, the limitations of local environments, and the correct usage of modern automation tools. Thank You
