@@ -167,6 +167,15 @@ For reliability, **GitHub Actions is used as the primary CI tool**.
 
 ---
 
+## CI/CD Flow
+1. Code pushed to GitHub
+2. GitHub Actions triggers build
+3. React app built
+4. Docker image created
+5. Image pushed to Docker Hub
+
+---
+
 ## 🔄 CI vs CD – Key Understanding
 
 | Concept | Status |
