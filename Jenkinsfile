@@ -62,9 +62,6 @@ pipeline {
         }
 
         stage('Push Docker Image') {
-            when {
-                branch 'main'
-            }
             steps {
                 withCredentials([
                     usernamePassword(
@@ -81,6 +78,7 @@ pipeline {
                 }
             }
         }
+
     }
 
     post {
