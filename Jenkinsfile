@@ -62,22 +62,26 @@ pipeline {
         }
 
         stage('Push Docker Image') {
+            when {
+                branch 'main'
+            }
             steps {
-                withCredentials([
-                    usernamePassword(
-                        credentialsId: 'dockerhub-creds',
-                        usernameVariable: 'DOCKER_USER',
-                        passwordVariable: 'DOCKER_PASS'
-                    )
-                ]) {
-                    bat """
-                    docker login -u %DOCKER_USER% -p %DOCKER_PASS%
-                    docker push %DOCKER_REPO%:%IMAGE_TAG%
-                    docker push %DOCKER_REPO%:latest
-                    """
+                withCredentials([usernamePassword(
+                    credentialsId: 'dockerhub-creds',
+                    usernameVariable: 'DOCKER_USER',
+                    passwordVariable: 'DOCKER_PASS'
+                )]) {
+                    bat '''
+                    echo %DOCKER_PASS% | docker login -u %DOCKER_USER% --password-stdin
+
+                    docker tag srinathudhayakumar/mealdb-react:%IMAGE_TAG% srinathudhayakumar/mealdb-react:latest
+
+                    docker push srinathudhayakumar/mealdb-react --all-tags
+                    '''
                 }
             }
         }
+
 
     }
 
