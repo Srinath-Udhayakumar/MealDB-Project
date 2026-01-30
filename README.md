@@ -205,7 +205,7 @@ For reliability, **GitHub Actions is used as the primary CI tool**.
 ## 📌 Future Improvements
 
 - Add Docker Compose
-- Deploy to cloud VM (AWS / Azure)
+- Deploy to cloud VM like (AWS / Azure)
 - Implement CD with self-hosted runner
 - Add backend services
 - Improve UI/UX
