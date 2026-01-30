@@ -35,10 +35,13 @@ pipeline {
         }
 
         stage('Build Docker Image') {
-            steps {
-                script {
-                    def commitHash = bat(
-                script: 'git rev-parse --short HEAD',
+    steps {
+        script {
+            def commitHash = bat(
+                script: '''
+                @echo off
+                git rev-parse --short HEAD
+                ''',
                 returnStdout: true
             ).trim()
 
@@ -53,6 +56,7 @@ pipeline {
         }
     }
 }
+
 
 stage('Push Docker Image') {
     when {
