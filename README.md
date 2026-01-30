@@ -198,7 +198,7 @@ For reliability, **GitHub Actions is used as the primary CI tool**.
 - Difference between CI and CD
 - Docker image build vs container runtime
 - Jenkins webhooks require public accessibility
-- GitHub Actions is more suitable for cloud-based CI
+- GitHub Actions is more suitable for cloud-based CI/CD
 
 ---
 
